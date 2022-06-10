@@ -1,3 +1,26 @@
 body{
-    background-color: #FDFCDC;
+    background-color: #EDF2F4;
 }
+
+header{
+    background-color: #2B2D42;
+}
+
+h1{
+    background-color: #8D99AE;
+}
+
+ a { 
+     color: white; 
+} 
+
+nav li{
+    display: inline-block;
+    margin-left: 25px;
+    background-color: #2B2D42
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-right: 20px;
+    float: :right;
+}
+
