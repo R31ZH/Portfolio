@@ -23,14 +23,12 @@ a {
 ul {
     /*???*/
     display: flex;
-    /*makes it in a row*/
-    flex-direction: row; 
+    /*makes it in a row needed?
+    flex-direction: row; */
     /*centers*/
     justify-content: center;
     /*makes dots disappear*/
     list-style-type: none;
-    /*makes all anchor tags white*/
-    text-decoration: none;
     background-color: #2B2D42;
     }
 
