@@ -7,31 +7,35 @@ header{
 
 }
 
+/*makes Jeremiah Aguilar Centered*/
 h1{
     text-align: center;
     background-color: #8D99AE;
 }
+/*makes all anchor tags white*/
 
- a { 
-     color: white; 
+a { 
+    color: white; 
 
 } 
 
 
 ul {
+    /*???*/
     display: flex;
-    flex-direction: row;   
+    /*makes it in a row*/
+    flex-direction: row; 
+    /*centers*/
     justify-content: center;
+    /*makes dots disappear*/
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    /*makes all anchor tags white*/
     text-decoration: none;
     background-color: #2B2D42;
-  }
+    }
 
 li {
-  
+
     margin-left:  15px;
     margin-right: 15px;
     margin-bottom: 15px;
@@ -45,11 +49,11 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 
-  }
+}
 
-  li a:hover {
+li a:hover {
     background-color: #232535;
-  }
+}
 .size{
     width: 80px;
     height: 80px;
@@ -66,7 +70,7 @@ li a {
     padding-left: 55px;
 }
 
-  .center {
+.center {
 display: flex;
 justify-content: center;
 }
@@ -83,18 +87,18 @@ justify-content: center;
     width: 15%;
     display: inline-block;
     margin-left: 60px;
-  }
-  
-  .box:hover {
+}
+
+.box:hover {
     box-shadow: 0 8px 16px 0 rgb(23, 165, 175);
-  }
-  
-  .container {
+}
+
+.container {
     padding: 2px 16px;
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
+}
 
 
 
