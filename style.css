@@ -52,13 +52,10 @@ li a {
 li a:hover {
     background-color: #232535;
 }
-.size{
-    width: 80px;
-    height: 80px;
-    padding-left: 60px;
-}
 
-.contact1 {
+
+
+/*.contact1 {
     padding-left: 60px;
 }
 .contact2 {
@@ -67,36 +64,54 @@ li a:hover {
 .contact3 {
     padding-left: 55px;
 }
+*/
 
+/*Centers h2's*/
 .center {
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
+/*Resizes Skills imgs FIX THIS IMGS NOT CENTERED*/
 .resize{
     width: 100px;
     height: 100px;
+    /*TEMPORARY FIX*/
     margin-left: 200px;
+    /* Fix this??
+    display: inline;
+    justify-content: center;
+    align-items: center;*/
+    
 }
+
+.size{
+    width: 80px;
+    height: 80px;
+    padding-left: 60px;
+}
+
 
 .box {
     box-shadow: 0 4px 8px 0 rgba(20, 139, 155, 0.2);
     transition: 0.3s;
     width: 15%;
-    display: inline-block;
     margin-left: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .box:hover {
     box-shadow: 0 8px 16px 0 rgb(23, 165, 175);
 }
 
-.container {
+/*.container {
     padding: 2px 16px;
     display: flex;
     flex-direction: row;
     align-items: center;
-}
+}*/
 
 
 
