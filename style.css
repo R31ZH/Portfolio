@@ -54,17 +54,20 @@ li a:hover {
 }
 
 
-
-/*.contact1 {
-    padding-left: 60px;
+/*Centers text in cards h3 and p*/
+.contact1 {
+display: flex;
+justify-content: center;
 }
 .contact2 {
-    padding-left: 45px;
+    display: flex;
+justify-content: center;
 }
 .contact3 {
-    padding-left: 55px;
+    display: flex;
+justify-content: center;
 }
-*/
+
 
 /*Centers h2's*/
 .center {
@@ -119,10 +122,8 @@ li a:hover {
 }
 
 /*.container {
-    padding: 2px 16px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+   display: flex;
+justify-content: center;
 }*/
 
 
