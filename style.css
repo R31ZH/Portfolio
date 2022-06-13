@@ -77,13 +77,16 @@ li a:hover {
     width: 100px;
     height: 100px;
     /*TEMPORARY FIX*/
-    margin-left: 200px;
-    /* Fix this??
-    display: inline;
-    justify-content: center;
-    align-items: center;*/
-    
+    /*margin-left: 200px;*/
 }
+.skillcenter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 
 .size{
     width: 80px;
@@ -101,6 +104,9 @@ li a:hover {
     flex-direction: row;
     justify-content: space-evenly;
 }
+
+
+
 
 .box:hover {
     box-shadow: 0 8px 16px 0 rgb(23, 165, 175);
