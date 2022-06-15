@@ -5,9 +5,6 @@ body{
 	border: 0;
 }
 
-header{
-    background-color: #343434;
-}
 
 section p{
     display: flex;
@@ -24,7 +21,6 @@ section p{
     max-width: 800px;
     margin: 0 auto;
     padding: 0.5rem;
-
 }
 
 a{
@@ -83,6 +79,33 @@ li a {
     transform-origin: bottom left;
 }
 
+
+.animation2 {
+    position: relative;
+}
+
+/*Line animation under navbar*/
+.animation2:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: grey;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+/*Line animation under navbar*/
+.animation2:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
 h4{
     display: flex;
     justify-content: center;
@@ -91,7 +114,7 @@ h4{
 
 /*Resizes projects imgs*/
 .project_imgs{
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     width: 300px;
@@ -106,7 +129,9 @@ h4{
     }
 
 
-
+.white{
+    color: white;
+}
 .blue{
     color: #4169E1;
 }
