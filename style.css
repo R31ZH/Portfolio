@@ -58,11 +58,29 @@ li a {
     text-decoration: none;
 
 }
+/*Line animation under navbar*/
+.animation {
+    position: relative;
+}
 
-header a:hover {
-text-decoration: underline;
-transition: all 0.4s ease-in;
+/*Line animation under navbar*/
+.animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #7DF9FF;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
 
+/*Line animation under navbar*/
+.animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 h4{
@@ -71,6 +89,7 @@ h4{
     font-size: 20px;
 }
 
+/*Resizes projects imgs*/
 .project_imgs{
     display: block;
     margin-left: auto;
@@ -79,6 +98,7 @@ h4{
     height: 300px;
 }
 
+/*animates img*/
 .big2:hover{
     transition: .3s ease-in-out;
     width: 400px;
