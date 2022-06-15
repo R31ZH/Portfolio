@@ -1,35 +1,36 @@
 body{
-    background-color: #EDF2F4;
+    background-color: #343434;
 }
 
 header{
-    background-color: #2B2D42;
-
+    background-color: #343434;
 }
 
 /*makes Jeremiah Aguilar Centered*/
-h1{
+.intro{
+    color: white;
+    line-height: 1.6;
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
     text-align: center;
-    background-color: #8D99AE;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0.5rem;
+
 }
-/*makes all anchor tags white*/
 
-a { 
-    color: white; 
-
-} 
-
+a{
+    color: #0096FF;
+text-decoration: none;}
 
 ul {
     /*???*/
     display: flex;
-    /*makes it in a row needed?
-    flex-direction: row; */
-    /*centers*/
-    justify-content: center;
+    /*wraps lis*/
+    flex-wrap: wrap;
+    /*Starts it at end*/
+    justify-content: end;
     /*makes dots disappear*/
     list-style-type: none;
-    background-color: #2B2D42;
     }
 
 li {
@@ -42,7 +43,7 @@ li {
 }
 
 li a {
-    color: white;
+    color: #7DF9FF;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -50,35 +51,60 @@ li a {
 }
 
 li a:hover {
-    background-color: #232535;
+text-decoration: underline;
+transition: all 0.4s ease-in;
+
 }
 
+h4{
+    display: flex;
+    justify-content: center;
+}
+
+.project_imgs{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 300px;
+
+}
+.blue{
+    color: #4169E1;
+}
+
+/*bg colors for sections*/
+#about{
+    background-color: #343434;
+}
+#project{
+background-color: white;
+}
+#skills{
+    background-color: #343434;
+}
+#contact-me{
+background-color: white;
+}
 
 /*Centers text in cards h3 and p*/
-.contact1 {
+.contact {
 display: flex;
 justify-content: center;
 }
-.contact2 {
-    display: flex;
-justify-content: center;
-}
-.contact3 {
-    display: flex;
-justify-content: center;
-}
-
 
 /*Centers h2's*/
 .center {
     display: flex;
     justify-content: center;
+font-size: 30px;
 }
 
 /*Resizes Skills imgs */
 .resize{
     width: 100px;
     height: 100px;
+    padding: 20px;
 }
 /*centers  Skills imgs*/
 .skillcenter {
@@ -87,8 +113,6 @@ justify-content: center;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    /*margin 
-    padding*/
 }
 
 
@@ -112,6 +136,8 @@ justify-content: center;
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: white;
+
 }
 
 
@@ -129,34 +155,15 @@ justify-content: center;
 
 
 /*
-.box1{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    border: solid 1px black;
-    width: 10em;
-    height: 10em;
-    margin: 10px 10px;
-}
-.box2{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-justify-content: center;
-    border: solid 1px black;
-    width: 10em;
-    height: 10em;
-    margin: 10px 10px;
-
-}
-.box3{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border: solid 1px black;
-    width: 10em;
-    height: 10em;
-    margin: 10px 10px;
-
-}
+GIVEN I need to sample a potential employee's previous work
+WHEN I load their portfolio
+a recent photo or avatar,
+WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications
+WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport
+*/
